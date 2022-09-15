@@ -1,0 +1,235 @@
+body {
+  font-family: sans-serif, "Arial";
+}
+* {
+  box-sizing: border-box;
+}
+.app {
+  background-color: #1e2140;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.wrapper-settings {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+}
+.settings {
+  max-width: 400px;
+  width: 90%;
+  padding: 0.9rem;
+  border-radius: 20px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.setting-paragraph {
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: rgb(71, 71, 71);
+}
+.form-times {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.form-group-title {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.7rem;
+  color: rgb(187, 187, 187);
+  font-weight: 700;
+}
+.form-group input {
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #f0f2fb;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.color-title {
+  letter-spacing: 2px;
+  color: #222;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgb(226, 226, 226);
+}
+
+.form-color {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.form-submit {
+  display: block;
+  color: #fff;
+  padding: 0.6rem 1.8rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 0 auto -30px;
+}
+.form-submit:hover {
+  filter: contrast(1.5);
+}
+.form-error {
+  color: rgb(255, 28, 28);
+  margin: 0.5rem 0 1rem;
+}
+
+.circle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.orange-color {
+  background-color: #f16c6b;
+  color: #12142a;
+}
+.cian-color {
+  background-color: #4acbd2;
+}
+.purple-color {
+  background-color: #db7ffc;
+}
+
+.active::before {
+  content: "";
+  width: 10px;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #222;
+  position: absolute;
+  transform: rotate(42deg);
+  top: 18px;
+  left: 5px;
+  border-radius: 5px;
+}
+.active::after {
+  content: "";
+  width: 18px;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #222;
+  position: absolute;
+  transform: rotate(125deg);
+  top: 14px;
+  left: 9px;
+  border-radius: 5px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pomodoro {
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pomodoro-title {
+  text-align: center;
+  color: #fafafa;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 3.5px;
+}
+
+.pomodoro-buttons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  background-color: #12142a;
+  border-radius: 25px;
+  padding: 0.4rem 0.3rem;
+}
+.pomodoro-button {
+  color: rgba(204, 204, 204, 0.812);
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  padding: 0.9rem 0;
+  border-radius: 22px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: .6s ease;
+}
+.active-button {
+  background-color: #ccc;
+  color: #12142a;
+}
+.icon-settings {
+  color: #fafafa;
+  opacity: 0.7;
+  display: block;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.icon-settings:hover {
+  opacity: 1;
+}
+
+.pomodoro-circle {
+  margin: 2rem 0 3rem;
+}
+.pomodoro-circle-time {
+  font-size: 3.5rem;
+  color: #ccc;
+  font-weight: 900;
+  margin: 2rem 0;
+}
+
+.btn-control-pomodoro {
+  color: rgb(146, 146, 146);
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 5px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: .3s ease;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btn-control-pomodoro:hover {
+  color: #ccc;
+}
