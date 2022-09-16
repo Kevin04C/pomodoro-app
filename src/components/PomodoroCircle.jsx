@@ -81,11 +81,11 @@ export const PomodoroCircle = () => {
         </h2>
         {isPlay ? (
           <button className="btn-control-pomodoro" onClick={handleChangePlay}>
-            Detener
+            DETENER
           </button>
         ) : (
           <button className="btn-control-pomodoro" onClick={handleChangePlay}>
-            Inicar
+            INICIAR
           </button>
         )}
       </CircularProgressbarWithChildren>
