@@ -22,7 +22,7 @@ body {
 }
 .wrapper-settings {
   width: 100%;
-  height: 100vh;
+  height: 106vh;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   inset: 0;
@@ -188,7 +188,7 @@ hr {
   transition: 0.3s ease;
   cursor: pointer;
   font-size: 0.9rem;
-  transition: .6s ease;
+  transition: 0.6s ease;
 }
 .active-button {
   background-color: #ccc;
@@ -224,12 +224,20 @@ hr {
   letter-spacing: 5px;
   font-weight: 900;
   cursor: pointer;
-  transition: .3s ease;
+  transition: 0.3s ease;
   background-color: transparent;
   border: none;
   outline: none;
 }
 
-.btn-control-pomodoro:hover {
-  color: #ccc;
+@media screen and (max-width: 350px) {
+  .pomodoro-circle-time {
+    font-size: 3.5rem;
+  }
+  .btn-control-pomodoro {
+    font-size: 1.5rem;
+  }
+  .pomodoro-button {
+    font-size: 0.7rem;
+  }
 }

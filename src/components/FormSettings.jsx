@@ -4,7 +4,7 @@ import { useContextApp } from "../hook/useContextApp";
 import { ErrorForm } from "./ErrorForm";
 
 export const FormSettings = () => {
-  const { configPomodoro, colorPomodoro, handleCloseModal, setColorPomodoro, changeSettingsPomodoro } = useContextApp();
+  const { configPomodoro, colorPomodoro, handleCloseModal, setColorPomodoro, changeSettingsPomodoro, showModal } = useContextApp();
 
   const [formState, setFormState] = useState(configPomodoro);
   const { pomodoro, shortBreak, longBreak } = formState;
@@ -40,6 +40,16 @@ export const FormSettings = () => {
     });
     target.classList.add("active");
   };
+
+  useEffect(() => {
+    if(showModal) {
+      // document.body.style.overflowY = "hidden";
+    }else {
+      // document.body.style.overflowY = "scroll";
+    }
+
+  }, [showModal])
+  
 
   return (
     <>
